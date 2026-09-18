@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ゲームプログラマー・ゲームプランナー向けポートフォリオ" />
+  <title>TAKUMI OKAMOTO — Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="トップへ"><span>TO</span><i></i>PORTFOLIO</a>
+    <button class="menu-button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="#about">PROFILE</a><a href="#works">WORKS</a><a href="#skills">SKILLS</a><a class="nav-contact" href="#contact">CONTACT <b>↗</b></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> GAME PROGRAMMER / PLANNER</p>
+        <h1>PLAY<br><em>THE</em> FUTURE<span class="period">.</span></h1>
+        <p class="hero-description">ゲーム体験を、技術とアイデアで前へ。<br>企画から実装まで、一貫してつくります。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#works">作品を見る <span>↓</span></a><a class="text-link" href="#about">プロフィール <span>→</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="属正反応マルチローグライクゲームの画面">
+        <img src="assets/roguelike.png" alt="属性反応マルチローグライクゲームのボス戦画面" />
+        <p class="art-caption">FEATURED PROJECT — MULTIPLAYER ROGUELIKE</p>
+      </div>
+      <a class="scroll-hint" href="#about"><span>SCROLL TO EXPLORE</span><i></i></a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="about-grid">
+        <div><h2>ゲームの「面白い」を<br>実装まで届ける。</h2></div>
+        <div class="about-content">
+          <p>ゲームプログラマー／プランナーとして、プレイヤーの心が動く瞬間をつくることを大切にしています。Unity・C#を中心に、ゲームシステム、オンライン同期、UIまで幅広く開発しています。</p>
+          <p>アイデアを形にする速さと、遊びながら磨き上げる粘り強さが持ち味です。</p>
+          <div class="profile-meta"><div><small>BASED IN</small><strong>Tokyo, Japan</strong></div><div><small>FOCUS</small><strong>Game Design / Engineering</strong></div></div>
+          <a class="button button-line" href="#contact">私について相談する <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section" id="works">
+      <div class="works-heading"><div class="section-label">02 / SELECTED WORKS</div><p>企画意図、担当範囲、<br>技術的な工夫を添えて紹介します。</p></div>
+      <article class="work-card featured" id="work-01">
+        <div class="work-visual"><img class="work-screenshot" src="assets/roguelike.png" alt="属性反応マルチローグライクゲームのプレイ画面" /><div class="visual-tags"><span>UNITY</span><span>C#</span><span>MULTIPLAYER</span></div></div>
+        <div class="work-info"><div><p class="work-number">01 / 04</p><h3>属性反応<br>マルチローグライク</h3><p class="work-subtitle">ヴァンパイアサバイバー風・協力型ローグライク</p></div><p class="work-summary">属性の組み合わせによる反応と、複数人での協力プレイを組み合わせたローグライクゲーム。成長・戦闘・ボス戦を通したゲームループを実装。</p><a class="circle-link" href="#detail-01" aria-label="属性反応マルチローグライクの詳細を見る">↘</a></div>
+      </article>
+      <div class="work-pair">
+        <article class="work-card compact" id="work-02"><div class="work-visual"><img class="work-screenshot" src="assets/liars-bar.png" alt="研究用に改良したライアーズバーのプレイ画面" /></div><div class="work-info"><div><p class="work-number">02 / 04</p><h3>LIAR'S BAR<br>RESEARCH</h3><p class="work-subtitle">研究用に改良した心理戦ゲーム</p></div><a class="circle-link" href="#detail-02" aria-label="LIAR'S BAR RESEARCHの詳細を見る">↘</a></div></article>
+        <article class="work-card compact" id="work-03"><div class="work-visual"><img class="work-screenshot" src="assets/texas-holdem.png" alt="研究用テキサスホールデムポーカーのプレイ画面" /></div><div class="work-info"><div><p class="work-number">03 / 04</p><h3>TEXAS HOLD'EM</h3><p class="work-subtitle">研究用マルチプレイポーカー</p></div><a class="circle-link" href="#detail-03" aria-label="TEXAS HOLD'EMの詳細を見る">↘</a></div></article>
+        <article class="work-card compact" id="work-04"><div class="work-visual"><img class="work-screenshot" src="assets/draw-poker.png" alt="研究用ドローポーカーのプレイ画面" /></div><div class="work-info"><div><p class="work-number">04 / 04</p><h3>DRAW POKER</h3><p class="work-subtitle">研究用マルチプレイポーカー</p></div><a class="circle-link" href="#detail-04" aria-label="DRAW POKERの詳細を見る">↘</a></div></article>
+      </div>
+    </section>
+
+    <section class="details section" aria-label="作品詳細">
+      <div class="section-label">03 / PROJECT DETAILS</div>
+      <article class="detail" id="detail-01"><div class="detail-index">01</div><div class="detail-main"><p class="eyebrow">CO-OP ROGUELIKE</p><h2>属性反応マルチローグライク</h2><p class="detail-lead">属性の組み合わせと協力プレイで、押し寄せる敵を突破するヴァンパイアサバイバー風ローグライクです。</p><div class="detail-facts"><div><small>ROLE</small><p>企画 / ゲームデザイン / 実装</p></div><div><small>TOOLS</small><p>Unity / C#</p></div><div><small>TYPE</small><p>個人制作</p></div></div><p class="detail-text">武器・属性・成長要素を組み合わせ、プレイヤーごとの戦い方が生まれるゲームループを構築。ボス戦では部位ごとの耐久値を表示し、協力して攻略する目標を明確にしています。</p></div><div class="detail-side"><img src="assets/roguelike.png" alt="属性反応マルチローグライクのゲーム画面" /><span>GAMEPLAY<br>SCREENSHOT</span></div></article>
+      <article class="detail" id="detail-02"><div class="detail-index">02</div><div class="detail-main"><p class="eyebrow">SOCIAL DEDUCTION</p><h2>LIAR'S BAR RESEARCH</h2><p class="detail-lead">ライアーズバーを研究用途に合わせて改良した、プレイヤー間の駆け引きを扱う心理戦ゲームです。</p><div class="detail-facts"><div><small>ROLE</small><p>研究用機能設計 / 実装</p></div><div><small>TOOLS</small><p>Unity / C#</p></div><div><small>TYPE</small><p>研究開発</p></div></div><p class="detail-text">ゲーム中の判断やプレイヤーの状態を扱えるように改良し、対戦の流れを記録・観察できる構成を設計。読み合いそのものを体験として保ちながら、実験用途に対応させています。</p></div><div class="detail-side"><img src="assets/liars-bar.png" alt="LIAR'S BAR RESEARCHのゲーム画面" /><span>GAMEPLAY<br>SCREENSHOT</span></div></article>
+      <article class="detail" id="detail-03"><div class="detail-index">03</div><div class="detail-main"><p class="eyebrow">MULTIPLAYER POKER</p><h2>TEXAS HOLD'EM</h2><p class="detail-lead">複数プレイヤーのベットとアクションをリアルタイムに進行する、研究用テキサスホールデムポーカーです。</p><div class="detail-facts"><div><small>ROLE</small><p>ゲーム進行 / UI / 実装</p></div><div><small>TOOLS</small><p>Unity / C#</p></div><div><small>TYPE</small><p>研究開発</p></div></div><p class="detail-text">フォールド、レイズ、チェック、オールインといった選択を明確に提示し、ゲーム進行を可視化。プレイヤーのベット履歴と手札の状態を扱う対戦システムを実装しました。</p></div><div class="detail-side"><img src="assets/texas-holdem.png" alt="TEXAS HOLD'EMのゲーム画面" /><span>GAMEPLAY<br>SCREENSHOT</span></div></article>
+      <article class="detail" id="detail-04"><div class="detail-index">04</div><div class="detail-main"><p class="eyebrow">MULTIPLAYER DRAW POKER</p><h2>DRAW POKER</h2><p class="detail-lead">カード交換フェーズを含む、研究用のマルチプレイドローポーカーです。</p><div class="detail-facts"><div><small>ROLE</small><p>ゲーム進行 / UI / 実装</p></div><div><small>TOOLS</small><p>Unity / C#</p></div><div><small>TYPE</small><p>研究開発</p></div></div><p class="detail-text">相手の手札情報を隠しながら、交換・ドロー・勝敗判定までを円滑に進行。複数プレイヤーの状態を一画面で把握しやすいUIを制作しました。</p></div><div class="detail-side"><img src="assets/draw-poker.png" alt="DRAW POKERのゲーム画面" /><span>GAMEPLAY<br>SCREENSHOT</span></div></article>
+    </section>
+
+    <section class="skills section" id="skills"><div class="section-label">04 / SKILLS</div><div class="skills-grid"><h2>つくるための<br>スキルセット。</h2><div class="skill-list"><div><span>01</span><strong>Unity / C#</strong><p>ゲームプレイ、UI、ツール開発</p></div><div><span>02</span><strong>Game Design</strong><p>企画、ルール設計、レベルデザイン</p></div><div><span>03</span><strong>Multiplayer</strong><p>Photon PUN2、Photon Fusion 2、リアルタイム同期</p></div><div><span>04</span><strong>Creative Tech</strong><p>Python、生体信号連携、プロトタイピング</p></div></div></div></section>
+
+    <section class="contact" id="contact"><p class="eyebrow"><span></span> LET'S MAKE SOMETHING FUN</p><h2>一緒に、夢中になれる<br><em>ゲームをつくりませんか。</em></h2><a class="contact-mail" href="mailto:okamon1002@gmail.com">okamon1002@gmail.com <span>↗</span></a><div class="contact-footer"><span>© 2026 TAKUMI OKAMOTO</span><div><a href="#">X / TWITTER</a><a href="#">GITHUB</a></div><a href="#top">BACK TO TOP ↑</a></div></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
